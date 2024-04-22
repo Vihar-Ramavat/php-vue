@@ -26,7 +26,7 @@
         </div>
         <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mt-4 transition-transform transform hover:scale-105">Reset Password</button>
         <button type="button" @click="onCancelReset" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mt-4 transition-transform transform hover:scale-105">Cancel</button>
-        <p v-if="showResetMessage" class="text-green-700 text-xs italic mt-2">{{ resetMessage }}</p>
+        <p v-if="showResetMessage" class="text-green-600 text-xs italic mt-2">{{ resetMessage }}</p>
         <p v-if="showErrorMessage" class="text-red-500 text-xs italic mt-2">{{ errorMessage }}</p>
       </form>
     </div>

@@ -44,7 +44,7 @@
           </div>
         </div>
         <button type="submit" :class="{ 'bg-blue-700': isButtonDarkBlue, 'bg-blue-500': !isButtonDarkBlue }" class="text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mt-4 transition-transform transform hover:scale-105">Register</button>
-        <p v-if="showSuccessMessage" class="text-green-700 text-xs italic mt-2">{{ registerMessage }}</p>
+        <p v-if="showSuccessMessage" class="text-green-600 text-xs italic mt-2">{{ registerMessage }}</p>
         <p v-if="showErrorMessage" class="text-red-500 text-xs italic mt-2">{{ registerMessage }}</p>
       </form>
       <p class="text-center text-sm mt-4">Already have an account?<a href="/login" class="text-blue-500 hover:text-blue-700"> Login</a></p>
