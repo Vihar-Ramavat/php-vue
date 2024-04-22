@@ -26,10 +26,17 @@ const routes = [
         path: 'profile',
         name: 'profile',
         component: () => import('../views/ProfileView.vue')
+      },
+      {
+        path: '/dashboard/change-password',
+        name: 'change-password',
+        component: () => import('../views/ChangePassword.vue'), // Assuming you'll create a new file for this view
+        meta: { requiresAuth: true }
       }
     ],
     meta: { requiresAuth: true }
   },
+  
   {
     path: '/reset-password',
     name: 'reset-password',

@@ -13,6 +13,7 @@
       <nav class="flex-1 px-4 py-2">
         <router-link to="/dashboard" :class="{ 'bg-blue-900 text-white': isLinkActive('/dashboard') }" class="block py-2 px-4 text-white hover:bg-blue-700 hover:text-white rounded-lg mb-2 transition duration-300 ease-in-out">Dashboard</router-link>
         <router-link to="/dashboard/profile" :class="{ 'bg-blue-900 text-white': isLinkActive('/dashboard/profile') }" class="block py-2 px-4 text-white hover:bg-blue-700 hover:text-white rounded-lg mb-2 transition duration-300 ease-in-out">Profile</router-link>
+        <router-link to="/dashboard/change-password" :class="{ 'bg-blue-900 text-white': isLinkActive('/dashboard/change-password') }" class="block py-2 px-4 text-white hover:bg-blue-700 hover:text-white rounded-lg mb-2 transition duration-300 ease-in-out">Change Password</router-link>
       </nav>
       <div class="p-4">
         <button @click="confirmLogout" class="flex border-2 border-red-400 items-center justify-center w-full rounded-md py-2 text-center text-white bg-red-600 hover:bg-red-700 font-semibold transition duration-300 ease-in-out">

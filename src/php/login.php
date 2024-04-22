@@ -26,13 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $row = $result->fetch_assoc();
             $hashed_password = $row['password'];
 
-            // Verify the password
             if (password_verify($password, $hashed_password)) {
+                $_SESSION['username'] = $username;
                 $res['error'] = false;
                 $res['message'] = "Login Successful";
                 $res['user_id'] = $row['id'];
-                $_SESSION['username'] = $username;
-                
             } else {
                 $res['error'] = true;
                 $res['message'] = "Invalid Username or Password";
