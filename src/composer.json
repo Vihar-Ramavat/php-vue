@@ -1,0 +1,6 @@
+{
+    "require": {
+        "jeroendesloovere/vcard": "^1.7",
+        "simplesoftwareio/simple-qrcode": "^4.2"
+    }
+}
