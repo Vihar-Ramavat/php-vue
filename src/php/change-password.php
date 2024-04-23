@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             }
                         } else {
                             $res['error'] = true;
-                            $res['message'] = "New password and confirm new password do not match";
+                            $res['message'] = "New password and confirm new password does not match";
                         }
                     } else {
                         $res['error'] = true;
